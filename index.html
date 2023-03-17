@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/hamburgers.min.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -55,13 +56,17 @@
                         <a href="#">Shop Coffee</a>
                     </div>
                 </div>
-                <img src="./assets/img/banner-coffee.png" alt="#">
+                <img data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" src="./assets/img/banner-coffee.png" alt="#">
             </div>
         </section>
 
         <div class="bg-blocks">
             <section class="about_us container">
-                <img class="cup-coffee" src="./assets/img/cup-coffee.png" alt="#">
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="cup-coffee" src="./assets/img/cup-coffee.png" alt="#">
                     <div class="about_title">
                         <h2>Explore Our Alowishus</h2>
                         <p>
@@ -99,7 +104,9 @@
             </section>
 
             <section class="order container">
-                <img src="./assets/img/order-coffee.png" alt="#">
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" src="./assets/img/order-coffee.png" alt="#">
                 <div class="order-content">
                     <h2>
                         Order Your Favourite Coffee
@@ -112,7 +119,9 @@
             </section>
 
             <section class="price container">
-                <img class="bg-coffee" src="./assets/img/bg-coffee.png" alt="#">
+                <img data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="bg-coffee" src="./assets/img/bg-coffee.png" alt="#">
                 <div class="price_title">
                     <h2>
                         Best Selling Coffee
@@ -124,7 +133,7 @@
                 <div class="price_cards">
                     <div class="price-card-first">
                         <div class="order-cup">
-                            <img class="double" src="./assets/img/double_expresso.png" alt="#">
+                            <img data-aos="zoom-in" class="double" src="./assets/img/double_expresso.png" alt="#">
                             <div>
                                 <p>#1 Selling</p>
                                 <h2>
@@ -143,7 +152,7 @@
 
                     <div class="price-card-first">
                         <div class="order-cup">
-                            <img class="double" src="./assets/img/caramel_frappe.png" alt="#">
+                            <img data-aos="zoom-in" class="double" src="./assets/img/caramel_frappe.png" alt="#">
                             <div>
                                 <p>#2 Selling</p>
                                 <h2>
@@ -162,7 +171,7 @@
 
                     <div class="price-card-first">
                         <div class="order-cup">
-                            <img class="double" src="./assets/img/iced_coffe.png" alt="#">
+                            <img data-aos="zoom-in" class="double" src="./assets/img/iced_coffe.png" alt="#">
                             <div>
                                 <p>#3 Selling</p>
                                 <h2>
@@ -192,9 +201,13 @@
                         </p>
                         <button>Download our app</button>
                     </div>
-                    <img src="./assets/img/coffee-block.png" alt="#">
+                    <img data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" src="./assets/img/coffee-block.png" alt="#">
                 </div>
-                <img class="bg-coffee_block" src="./assets/img/bg-coffee_block.png" alt="#">
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="bg-coffee_block" src="./assets/img/bg-coffee_block.png" alt="#">
             </section>
 
             <section class="customers">
@@ -302,7 +315,9 @@
                     </div>
                 </div>
                 <img class="bg-customers1" src="./assets/img/bg-customers1.png" alt="#">
-                <img class="bg-customers2" src="./assets/img/bg-customers2.png" alt="#">
+                <img data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="bg-customers2" src="./assets/img/bg-customers2.png" alt="#">
             </section>
 
             <footer class="footer container">
@@ -374,6 +389,10 @@
           hamburger.classList.toggle('is-active');
           navCollapse.classList.toggle('is-active');
         })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
 </body>
