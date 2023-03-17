@@ -429,4 +429,126 @@
   }
 }
 
+.price {
+  position: relative;
+  padding-bottom: 200px;
+}
+.price .bg-coffee {
+  position: absolute;
+  top: -216px;
+  right: -310px;
+}
+@media screen and (max-width: 1875px) {
+  .price .bg-coffee {
+    display: none;
+  }
+}
+.price .price_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.price .price_title h2 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.375rem;
+  color: var(--color-black-600);
+}
+.price .price_title p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.1875rem;
+  margin-top: 1.5625rem;
+  color: var(--color-black-400);
+  max-width: 604px;
+}
+@media screen and (max-width: 425px) {
+  .price .price_title h2 {
+    font-size: 3rem;
+  }
+}
+.price .price_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  gap: 30px;
+  margin-top: 178px;
+}
+@media screen and (max-width: 806px) {
+  .price .price_cards {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    flex-direction: column;
+  }
+}
+.price .price_cards .price-card-first {
+  background: linear-gradient(142.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  filter: drop-shadow(0px 20px 60px rgba(163, 168, 179, 0.15));
+  border-radius: 24px;
+  box-sizing: border-box;
+  padding: 40px 30px;
+  max-width: 395px;
+}
+.price .price_cards .price-card-first .order-cup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.price .price_cards .price-card-first .order-cup .double {
+  position: absolute;
+  top: -113px;
+  left: -22px;
+}
+.price .price_cards .price-card-first .order-cup p {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--color-black-400);
+  margin: 0 auto;
+}
+.price .price_cards .price-card-first .order-cup h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  color: var(--color-black-600);
+  margin-top: 8px;
+  max-width: 160px;
+}
+.price .price_cards .price-card-first p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-black-400);
+  margin-top: 87px;
+}
+.price .price_cards .price-card-first .order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.price .price_cards .price-card-first .order-btn span {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 28px;
+  color: var(--color-black-600);
+}
+.price .price_cards .price-card-first .order-btn button {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-transform: uppercase;
+  color: var(--color-white-100);
+  background: var(--color-black-600);
+  border-radius: 7.875rem;
+  padding: 1.25rem 2.5rem;
+  transition: all 0.6s;
+}
+.price .price_cards .price-card-first .order-btn button:hover {
+  background: var(--color-black-400);
+  transform: scale(0.9);
+}
+
 /*# sourceMappingURL=style.css.map */
