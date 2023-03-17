@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        let navCollapse = document.querySelector('.header-items');
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle('is-active');
+          navCollapse.classList.toggle('is-active');
+        })
+    </script>
+
+</body>
+</html>
