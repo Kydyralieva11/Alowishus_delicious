@@ -189,4 +189,189 @@
   }
 }
 
+.banner {
+  background: var(--color-gray-200);
+}
+.banner .banner-items {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+@media screen and (max-width: 1335px) {
+  .banner .banner-items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+}
+.banner .banner-items img {
+  max-width: -webkit-fill-available;
+}
+.banner .banner-items .banner-cafe {
+  position: absolute;
+  bottom: 430px;
+  left: 427px;
+}
+.banner .banner-items .banner_content h2 {
+  font-weight: 800;
+  font-size: 7.75rem;
+  line-height: 8.75rem;
+  color: var(--color-black-600);
+  max-width: 600px;
+}
+.banner .banner-items .banner_content p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.1875rem;
+  color: var(--color-black-400);
+  max-width: 33.125rem;
+  margin-top: 1.875rem;
+}
+@media screen and (max-width: 425px) {
+  .banner .banner-items .banner_content h2 {
+    font-size: 4.75rem;
+  }
+  .banner .banner-items .banner_content .buttons {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1335px) {
+  .banner .banner-items .banner_content p {
+    margin: 0 auto;
+    margin-top: 1.875rem;
+  }
+  .banner .banner-items .banner_content .buttons {
+    justify-content: center;
+  }
+}
+.banner .banner-items .banner_content .buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 82px;
+}
+.banner .banner-items .banner_content .buttons button {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-transform: uppercase;
+  color: var(--color-white-100);
+  background: var(--color-black-600);
+  border-radius: 7.875rem;
+  padding: 1.25rem 2.5rem;
+  transition: all 0.6s;
+}
+.banner .banner-items .banner_content .buttons button:hover {
+  background: var(--color-black-400);
+  transform: scale(0.9);
+}
+.banner .banner-items .banner_content .buttons a {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  color: var(--color-black-600);
+  text-decoration: underline;
+}
+
+.about_us {
+  position: relative;
+  padding-bottom: 260px;
+}
+.about_us .cup-coffee {
+  position: absolute;
+  top: 75px;
+  left: -546px;
+}
+.about_us .about_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+.about_us .about_title h2 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.375rem;
+  text-align: center;
+  color: var(--color-black-600);
+}
+.about_us .about_title p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.1875rem;
+  text-align: center;
+  color: var(--color-black-400);
+  margin-top: 1.5625rem;
+  max-width: 604px;
+}
+@media screen and (max-width: 806px) {
+  .about_us .about_title h2 {
+    font-size: 3rem;
+  }
+}
+.about_us .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  gap: 30px;
+  margin-top: 90px;
+}
+@media screen and (max-width: 806px) {
+  .about_us .cards {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    flex-direction: column;
+  }
+}
+.about_us .cards .card-first {
+  background: linear-gradient(152.09deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  filter: drop-shadow(0px 30px 60px rgba(163, 168, 179, 0.15));
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 393px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_us .cards .card-first .card_title h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3.25rem;
+  color: var(--color-black-600);
+}
+.about_us .cards .card-first .card_title p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.1875rem;
+  color: var(--color-black-400);
+  margin-top: 8px;
+}
+.about_us .cards .card-first img {
+  margin: 60px;
+}
+.about_us .cards .card-first button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--color-white-100);
+  background: var(--color-black-600);
+  box-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+  border-radius: 63px;
+  padding: 15px 30px;
+  transition: all 0.6s;
+}
+.about_us .cards .card-first button:hover {
+  background: var(--color-black-400);
+  transform: scale(0.9);
+}
+
 /*# sourceMappingURL=style.css.map */
