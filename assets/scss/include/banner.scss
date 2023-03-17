@@ -1,0 +1,90 @@
+.banner{
+    background: var(--color-gray-200);
+    .banner-items{
+        padding-top:130px;
+        padding-bottom: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        @media screen and (max-width: 1335px){
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 50px;
+        }
+        img{
+            max-width: -webkit-fill-available;
+        }
+        .banner-cafe{
+            position: absolute;
+            bottom: 430px;
+            left: 427px;
+        }
+        .banner_content{
+            h2{
+                font-weight: 800;
+                font-size: 7.75rem;
+                line-height: 8.75rem;
+                color: var(--color-black-600);
+                max-width: 600px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 2.1875rem;
+                color: var(--color-black-400);
+                max-width: 33.125rem;
+                margin-top: 1.875rem;
+            }
+            @media screen and (max-width: 425px){
+                h2{
+                    font-size: 4.75rem;
+                }
+                .buttons{
+                    flex-direction: column;
+                }
+            }
+            @media screen and (max-width: 1335px){
+                p{
+                    margin: 0 auto;
+                    margin-top: 1.875rem;
+                }
+                .buttons{
+                    justify-content: center;
+                }
+            }
+            .buttons{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-top: 82px;
+                button{
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 1.875rem;
+                    text-transform: uppercase;
+                    color: var(--color-white-100);
+                    background: var(--color-black-600);
+                    border-radius: 7.875rem;
+                    padding: 1.25rem 2.5rem;
+                    transition: all .6s;
+                }
+                button:hover{
+                    background: var(--color-black-400);
+                    transform: scale(0.9);
+                }
+                a{
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 1.625rem;
+                    text-transform: uppercase;
+                    color: var(--color-black-600);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
