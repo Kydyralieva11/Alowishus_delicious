@@ -14,6 +14,7 @@
             align-items: center;
             text-align: center;
             gap: 50px;
+            padding: 30px;
         }
         img{
             max-width: -webkit-fill-available;
@@ -41,10 +42,8 @@
             }
             @media screen and (max-width: 425px){
                 h2{
-                    font-size: 4.75rem;
-                }
-                .buttons{
-                    flex-direction: column;
+                    font-size: 60px;
+                    line-height: inherit;
                 }
             }
             @media screen and (max-width: 1335px){
@@ -83,6 +82,12 @@
                     text-transform: uppercase;
                     color: var(--color-black-600);
                     text-decoration: underline;
+                }
+            }
+            @media screen and (max-width: 425px){
+                .buttons{
+                    flex-direction: column;
+                    margin-top: 45px;
                 }
             }
         }

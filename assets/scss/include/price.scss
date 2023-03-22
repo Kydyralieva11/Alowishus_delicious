@@ -41,12 +41,6 @@
         grid-template-columns: repeat(auto-fill, minmax(390px,1fr));
         gap: 30px;
         margin-top: 178px;
-        @media screen and (max-width: 806px){
-            display: flex;
-            align-items: center;
-            gap: 90px;
-            flex-direction: column;
-        }
         .price-card-first{
             background: linear-gradient(142.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             filter: drop-shadow(0px 20px 60px rgba(163, 168, 179, 0.15));
@@ -115,5 +109,32 @@
                 }
             }
         }
+        @media screen and (max-width: 400px){
+            p{
+                text-align: center;
+            }
+            .order-btn{
+                flex-direction: column;
+                gap: 23px;
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 900px){
+        .price_cards{
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            flex-direction: column;
+            margin-top: 132px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .price{
+        padding-bottom: 90px;
     }
 }

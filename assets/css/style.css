@@ -209,8 +209,15 @@
   margin-top: 40px;
 }
 @media screen and (max-width: 425px) {
+  .footer .footer-arrow .footer-content .first-info {
+    margin-bottom: 50px;
+  }
+  .footer .footer-arrow .footer-content .first-info .logo {
+    width: 145px;
+  }
   .footer .footer-arrow .footer-content .first-info p {
-    font-size: 1.3125rem;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 .footer .footer-arrow .footer-content .section-info h2 {
@@ -229,10 +236,12 @@
 }
 @media screen and (max-width: 425px) {
   .footer .footer-arrow .footer-content .section-info h2 {
-    font-style: 1.5625rem;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
   .footer .footer-arrow .footer-content .section-info p {
-    font-size: 1.3125rem;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 .footer .footer-arrow .footer-content .section-info .items-arrow {
@@ -247,6 +256,14 @@
   line-height: 1.875rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 425px) {
+  .footer .footer-arrow .footer-content .section-info .items-arrow {
+    margin-top: 15px;
+  }
+  .footer .footer-arrow .footer-content .section-info .items-arrow a {
+    font-size: 18px;
+  }
+}
 .footer .footer-arrow .footer-info .first-contact h2 {
   font-weight: 800;
   font-size: 2.5rem;
@@ -255,7 +272,7 @@
 }
 @media screen and (max-width: 425px) {
   .footer .footer-arrow .footer-info .first-contact h2 {
-    font-size: 1.5625rem;
+    font-size: 23px;
   }
 }
 .footer .footer-arrow .footer-info .first-contact .network {
@@ -303,10 +320,10 @@
 }
 @media screen and (max-width: 425px) {
   .footer .footer-arrow .footer-info .first-contact .network .email p {
-    font-size: 1.3125rem;
+    font-size: 18px;
   }
   .footer .footer-arrow .footer-info .first-contact .network .phone p {
-    font-size: 1.3125rem;
+    font-size: 18px;
   }
 }
 .footer .footer-arrow .footer-info .first-contact .network .social_network {
@@ -342,6 +359,12 @@
   padding: 20px;
   border-radius: 40px;
 }
+@media screen and (max-width: 425px) {
+  .footer .footer-arrow .footer-info .first-contact .network {
+    gap: 15px;
+    margin-top: 15px;
+  }
+}
 .footer .footer-arrow .footer-info .section-info {
   display: flex;
   flex-direction: column;
@@ -369,7 +392,7 @@
   color: var(--color-white-100);
   background: var(--color-black-600);
   border-radius: 7.875rem;
-  padding: 1.25rem 2.5rem;
+  padding: 20px 40px;
   max-width: 173px;
   transition: all 0.6s;
 }
@@ -378,11 +401,18 @@
   transform: scale(0.9);
 }
 @media screen and (max-width: 425px) {
+  .footer .footer-arrow .footer-info .section-info {
+    gap: 15px;
+  }
   .footer .footer-arrow .footer-info .section-info h2 {
-    font-size: 25px;
+    font-size: 22px;
+    margin-top: 50px;
   }
   .footer .footer-arrow .footer-info .section-info input {
     width: 350px;
+  }
+  .footer .footer-arrow .footer-info .section-info button {
+    padding: 12px 40px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -425,13 +455,25 @@
   .footer .footer-items {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 375px) {
   .footer .footer-items p {
     text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer .footer-items .title_ft {
+    font-style: 16px;
+    line-height: 20px;
   }
 }
 
+@media screen and (max-width: 425px) {
+  .footer {
+    margin-top: 90px;
+  }
+  .footer .footer-arrow {
+    gap: 50px;
+  }
+}
 .banner {
   background: var(--color-gray-200);
 }
@@ -451,6 +493,7 @@
     align-items: center;
     text-align: center;
     gap: 50px;
+    padding: 30px;
   }
 }
 .banner .banner-items img {
@@ -478,10 +521,8 @@
 }
 @media screen and (max-width: 425px) {
   .banner .banner-items .banner_content h2 {
-    font-size: 4.75rem;
-  }
-  .banner .banner-items .banner_content .buttons {
-    flex-direction: column;
+    font-size: 60px;
+    line-height: inherit;
   }
 }
 @media screen and (max-width: 1335px) {
@@ -522,6 +563,12 @@
   color: var(--color-black-600);
   text-decoration: underline;
 }
+@media screen and (max-width: 425px) {
+  .banner .banner-items .banner_content .buttons {
+    flex-direction: column;
+    margin-top: 45px;
+  }
+}
 
 .about_us {
   position: relative;
@@ -556,6 +603,9 @@
   max-width: 604px;
 }
 @media screen and (max-width: 806px) {
+  .about_us .about_title {
+    padding-top: 90px;
+  }
   .about_us .about_title h2 {
     font-size: 3rem;
   }
@@ -617,6 +667,11 @@
   transform: scale(0.9);
 }
 
+@media screen and (max-width: 900px) {
+  .about_us {
+    padding-bottom: 90px;
+  }
+}
 .order {
   display: flex;
   align-items: center;
@@ -672,6 +727,11 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .order {
+    padding-bottom: 90px;
+  }
+}
 .price {
   position: relative;
   padding-bottom: 200px;
@@ -716,14 +776,6 @@
   grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
   gap: 30px;
   margin-top: 178px;
-}
-@media screen and (max-width: 806px) {
-  .price .price_cards {
-    display: flex;
-    align-items: center;
-    gap: 90px;
-    flex-direction: column;
-  }
 }
 .price .price_cards .price-card-first {
   background: linear-gradient(142.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -793,7 +845,33 @@
   background: var(--color-black-400);
   transform: scale(0.9);
 }
+@media screen and (max-width: 400px) {
+  .price .price_cards p {
+    text-align: center;
+  }
+  .price .price_cards .order-btn {
+    flex-direction: column;
+    gap: 23px;
+  }
+  .price .price_cards .order-btn button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .price .price_cards {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    margin-top: 132px;
+  }
+}
 
+@media screen and (max-width: 900px) {
+  .price {
+    padding-bottom: 90px;
+  }
+}
 .customers {
   display: flex;
   align-items: flex-start;
@@ -948,6 +1026,11 @@
   color: var(--color-black-400);
 }
 
+@media screen and (max-width: 900px) {
+  .customers {
+    margin-top: 50px;
+  }
+}
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
   font-size: 16px;
 }
@@ -1005,6 +1088,11 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 500px) {
+  .swiper-button-flex {
+    margin-top: 50px;
+  }
+}
 .slider-button-next {
   padding: 15px;
   width: 60px;

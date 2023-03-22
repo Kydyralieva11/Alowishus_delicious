@@ -28,12 +28,15 @@
             margin-top: 1.5625rem;
             max-width: 604px;
         }
-        @media screen and (max-width: 806px){
-            h2{
+    }
+    @media screen and (max-width: 806px){
+            .about_title{
+                padding-top: 90px;
+                h2{
                 font-size: 3rem;
+                }
             }
         }
-    }
     .cards{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
@@ -89,5 +92,10 @@
                 transform: scale(0.9);
             }
         }
+    }
+}
+@media screen and (max-width: 900px) {
+    .about_us{
+        padding-bottom: 90px;
     }
 }
